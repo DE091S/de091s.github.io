@@ -12,7 +12,8 @@ function jump() {
 		putin.classList.add("jump")
 		result++;
 		if(result>15){
-			alert("ты своровал все деньги, перегрузи страницу");
+			alert("ты своровал все деньги, поезжай в геленджик");
+			result = 0;
 		}
 
 	}
@@ -26,6 +27,7 @@ let isAlive = setInterval(function(){
 	let navalnyLeft = parseInt(window.getComputedStyle(navalny).getPropertyValue("Left"));
 
 	if(navalnyLeft < 40 && navalnyLeft > 0 && putinTop >= 150){
-		alert("Ты попался вечер в хату")
+		alert("Ты попался, вечер в хату")
+		result = 0;
 	}
 }, 10)
