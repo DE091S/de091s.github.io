@@ -10,7 +10,7 @@ let result = 0;
 function jump() {
 	if (putin.classList != "jump") {
 		putin.classList.add("jump")
-				result++;
+		result++;
 		if(result>15){
 			alert("GG, перегрузи страницу");
 		}
