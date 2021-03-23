@@ -29,5 +29,9 @@ let isAlive = setInterval(function(){
 	if(navalnyLeft < 40 && navalnyLeft > 0 && putinTop >= 150){
 		alert("Ты попался, вечер в хату")
 		result = 0;
+		document.writeln("Результат:")
+		document.writeln(result)
+		document.writeln("перезагрузи страницу")
+
 	}
 }, 10)
