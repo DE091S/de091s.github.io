@@ -26,6 +26,6 @@ let isAlive = setInterval(function(){
 	let navalnyLeft = parseInt(window.getComputedStyle(navalny).getPropertyValue("Left"));
 
 	if(navalnyLeft < 40 && navalnyLeft > 0 && putinTop >= 150){
-		alert("Ты попалсяб вечер в хату")
+		alert("Ты попался вечер в хату")
 	}
 }, 10)
