@@ -12,7 +12,7 @@ function jump() {
 		putin.classList.add("jump")
 		result++;
 		if(result>15){
-			alert("GG, перегрузи страницу");
+			alert("Ты своровал все что мог");
 			result = 0;
 		}
 
@@ -29,7 +29,7 @@ let isAlive = setInterval(function(){
 	
 
 	if(navalnyLeft < 40 && navalnyLeft > 0 && putinTop >= 150){
-		alert("Вечер в хату"+result);
+		alert("Вечер в хату. Твой результат:"+result);
 	
 
 
