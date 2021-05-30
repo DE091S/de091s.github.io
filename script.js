@@ -1,7 +1,7 @@
 const putin = document.getElementById('putin');
 const navalny = document.getElementById('navalny');
 
-document.addEventListener("keydown", function(event){
+document.addEventListener("keypress", function(event){
 	jump();
 });
 
