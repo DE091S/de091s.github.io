@@ -1,8 +1,8 @@
 const putin = document.getElementById('putin');
 const navalny = document.getElementById('navalny');
-const input = document.querySelector('input');
+//const input = document.querySelector('input');
 
-input.addEventListener("click", function(event){
+document.addEventListener("click", function(event){
 	jump();
 });
 
@@ -12,7 +12,7 @@ function jump() {
 		putin.classList.add("jump")
 		result++;
 		if(result>15){
-			alert("Ты своровал все что мог");
+			alert("GG, перегрузи страницу");
 			result = 0;
 		}
 
@@ -20,7 +20,7 @@ function jump() {
 
 	setTimeout(function(){
 		putin.classList.remove("jump")
-	}, 290)
+	}, 250)
 }
 
 let isAlive = setInterval(function(){
@@ -29,7 +29,7 @@ let isAlive = setInterval(function(){
 	
 
 	if(navalnyLeft < 40 && navalnyLeft > 0 && putinTop >= 150){
-		alert("Вечер в хату. Твой результат:"+result);
+		alert("Вечер в хату"+result);
 	
 
 
