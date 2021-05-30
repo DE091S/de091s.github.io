@@ -1,4 +1,4 @@
-.styled {
+/*.styled {
 	width: 600px;
 	height: 200px;
 	border-bottom: 10px solid #000;
@@ -26,7 +26,7 @@
 .styled:active {
     box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
                 inset 2px 2px 3px rgba(0, 0, 0, .6);
-}
+}*/
 
 
 
@@ -68,7 +68,7 @@
 	position: relative;
 	top: 100px;
 	left: 500px;
-	animation: navalnyMov2 1.0s infinite linear;
+	animation: navalnyMov2 4.5s infinite linear;
 }
 
 
