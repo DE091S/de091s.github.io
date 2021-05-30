@@ -20,7 +20,7 @@ function jump() {
 
 	setTimeout(function(){
 		putin.classList.remove("jump")
-	}, 300)
+	}, 290)
 }
 
 let isAlive = setInterval(function(){
