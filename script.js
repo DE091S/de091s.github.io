@@ -1,5 +1,6 @@
 const putin = document.getElementById('putin');
 const navalny = document.getElementById('navalny');
+const counter = document.querySelector('#counter')
 //const input = document.querySelector('input');
 
 document.addEventListener("click", function(event){
@@ -11,6 +12,7 @@ function jump() {
 	if (putin.classList != "jump") {
 		putin.classList.add("jump")
 		result++;
+		counter.textContent = result;
 		if(result>15){
 			alert("Ты своровал все что мог");
 			result = 0;
@@ -34,6 +36,7 @@ let isAlive = setInterval(function(){
 
 
 		result = 0;
+		counter.textContent = result;
 	}
 
 
