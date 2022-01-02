@@ -18,16 +18,18 @@
     box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
                 inset -2px -2px 3px rgba(0, 0, 0, .6);
 }
-
 .styled:hover {
     background-color: rgba(255, 0, 0, 1);
 }
-
 .styled:active {
     box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
                 inset 2px 2px 3px rgba(0, 0, 0, .6);
 }*/
 
+html {
+    font-family: 'Press Start 2P';
+    font-size: 2rem;
+}
 
 
 .game{
@@ -114,4 +116,15 @@
 	100%{
 		top: 100px;
 	}
+}
+
+#display,
+#counter {
+    height: 32px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
