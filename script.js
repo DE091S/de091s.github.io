@@ -13,10 +13,10 @@ function jump() {
 		putin.classList.add("jump")
 		result++;
 		counter.textContent = result;
-		if(result>15){
-			alert("Ты своровал все что мог");
-			result = 0;
-		}
+		//if(result>15){
+			//alert("Ты своровал все что мог");
+			//result = 0;
+		//}
 
 	}
 
