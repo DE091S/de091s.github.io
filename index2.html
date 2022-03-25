@@ -1,15 +1,27 @@
-<!DOCTYPE html>
-<html lang="ru">
+<html>
     <head>
-        <meta charset="UTF-8">
-        <title>Protosi</title>
-        <a href="index.html"><button>Back</button></a>
-        <link rel = "stylesheet" href = "style2.css">
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<title>Hack me</title>
+    	<link rel="stylesheet" href="style2.css">
+    	<h1><a href="index3.html">Home</a></h1>
     </head>
-
     <body>
-    		<h1>Протосы самая слабая нация. Пруфы в группе алтай</h1>
-    		
-
+		<input id='userInput' onKeyUp="userSubmit()" size=60><BR>
+		<P><div id='result'></div>
+			<script type='text/javascript'>
+    			function userSubmit() 
+    			{
+        		var UI=document.getElementById('userInput').value;
+        		var url = "index.html"
+        		if (UI=="root")
+        		{
+        			document.getElementById('result').innerHTML='gj my friend ';
+        			document.write("gj lvl 1 done");
+        			
+				}
+ 
+    			}
+</script>
     </body>
 </html>
