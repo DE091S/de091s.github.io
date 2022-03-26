@@ -2,7 +2,7 @@ body{
 	background-color: #008B8B;
 }
 
-#slides {
+/*#slides {
     position: relative;
     height: 100px;
     padding: 0px;
@@ -48,4 +48,19 @@ body{
 }
 .slide:nth-of-type(5) {
     background: purple;
+}*/
+
+
+
+.row {
+
+  margin-top:50px;
+  margin-left:10px;
+}
+
+.row2{
+
+  margin-top:100px;
+  margin-left:0px;
+
 }
