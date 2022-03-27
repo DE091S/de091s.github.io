@@ -7,11 +7,15 @@ document.addEventListener("click", function(event){
 	jump();
 });
 
+let rec = 0;
 let result = 0;
 function jump() {
 	if (putin.classList != "jump") {
 		putin.classList.add("jump")
 		result++;
+		if(result>rec){
+			rec = result;
+		}
 		counter.textContent = result;
 		//if(result>15){
 			//alert("Ты своровал все что мог");
@@ -31,7 +35,7 @@ let isAlive = setInterval(function(){
 	
 
 	if(navalnyLeft < 40 && navalnyLeft > 0 && putinTop >= 150){
-		alert("Ты попался, результат:"+result);
+		alert("Ты попался, твой рекорд:"+rec);
 	
 
 
