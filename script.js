@@ -31,7 +31,7 @@ let isAlive = setInterval(function(){
 	
 
 	if(navalnyLeft < 40 && navalnyLeft > 0 && putinTop >= 150){
-		alert("Вечер в хату. Ваш результат:"+result);
+		alert("Ты попался, результат:"+result);
 	
 
 
