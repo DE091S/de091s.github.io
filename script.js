@@ -35,7 +35,7 @@ let isAlive = setInterval(function(){
 	
 
 	if(navalnyLeft < 40 && navalnyLeft > 0 && putinTop >= 150){
-		alert("Ты попался, твой рекорд:"+rec);
+		alert("Ты попался, твой рекорд: "+rec);
 	
 
 
