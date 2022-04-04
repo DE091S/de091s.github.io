@@ -7,3 +7,4 @@ function nextSlide() {
     currentSlide = (currentSlide+1)%slides.length;
     slides[currentSlide].className = 'slide showing';
 }
+('Button2').tilt({scale: 1.1, spped: 1000});
