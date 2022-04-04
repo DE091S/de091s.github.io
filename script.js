@@ -45,3 +45,5 @@ let isAlive = setInterval(function(){
 
 
 }, 10)
+
+('Button2').tilt({scale: 1.1, spped: 1000});
