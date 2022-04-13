@@ -1,0 +1,147 @@
+/*.styled {
+  width: 600px;
+  height: 200px;
+  border-bottom: 10px solid #000;
+  margin: auto;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 100px;
+    background-color: rgba(220, 0, 0, 1);
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+.styled:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+.styled:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}*/
+
+html {
+    font-family: 'Press Start 2P';
+    font-size: 2rem;
+}
+
+
+.game{
+  width: 600px;
+  height: 200px;
+  border-bottom: 10px solid #000;
+  margin: auto;
+}
+
+#putin{
+  width: 50px;
+  height: 50px;
+  background-image: url(img/navalny.png);
+  background-size: 50px 50px;
+  position: relative;
+  top: 150px;
+
+}
+
+#navalny{
+  width: 20px;
+  height: 40px;
+  background-image: url(img/plutin.png.png);
+  background-size: 25px 40px;
+  position: relative;
+  top: 100px;
+  left: 500px;
+  animation: navalnyMov 2.0s infinite linear;
+}
+
+
+
+
+
+
+@keyframes navalnyMov{
+  0%{
+    left: 580px;
+  }
+
+  100%{
+    left: -20px;
+  }
+}
+
+
+@keyframes navalnyMov2{
+  0%{
+    left: 580px;
+  }
+
+  100%{
+    left: -20px;
+  }
+}
+
+.jump{
+  animation: jump 0.5s linear;
+}
+
+@keyframes jump{
+  0%{
+    top: 100px;
+  }
+  30%{
+    top: 30px;
+  }
+  50%{
+    top: 50px;
+  }
+  80%{
+    top: 80px;
+  }
+  100%{
+    top: 100px;
+  }
+}
+
+#display,
+#counter {
+      width: 600px;
+    height: 500px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Button-wrapper{
+  position:relative;
+}
+
+.Button:hover{
+  box-shadow: 0 8px 65px -5px #9ACD32;
+}
+
+.Button{
+  letter-spacing: 2px;
+  font-size: 22px;
+  line-height: 68px;
+  text-transform: uppercase;
+  background: #008000;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  min-width: 200px;
+  padding: 0 24px;
+  box-shadow: 0 20px 60px -10px #228B22;
+  cursor: pointer;
+  transform: perspective(250px) scale3d(1,1,1);
+  transition: all 1s cubic-bezier(0.03, 0.98, 0.52, 0.99);
+  outline: none;
+}
