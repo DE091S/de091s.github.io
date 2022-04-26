@@ -1,5 +1,5 @@
 body{
-	background-color: #2F4F4F;
+	background-color: #000000;
 }
 
 /*#slides {
@@ -53,7 +53,7 @@ body{
 
 #dn {
 
-  
+  color: #00FF00;
   margin-left:600px;
 }
 
@@ -78,13 +78,13 @@ body{
 	font-size: 17px;
 	line-height: 58px;
 	text-transform: uppercase;
-	background: #66CDAA;
-	color: #008080;
+	background: #5F9EA0;
+	color: #FFFAFA;
 	border: none;
 	border-radius: 10px;
 	min-width: 20px;
 	padding: 0 24px;
-	box-shadow: 0 20px 60px -10px #008080;
+	box-shadow: 0 20px 60px -10px #2F4F4F;
 	cursor: pointer;
 	transform: perspective(250px) scale3d(1,1,1);
 	transition: all 1s cubic-bezier(0.03, 0.98, 0.52, 0.99);
