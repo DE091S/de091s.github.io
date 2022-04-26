@@ -8,3 +8,8 @@ function nextSlide() {
     slides[currentSlide].className = 'slide showing';
 }
 ('Button2').tilt({scale: 1.1, spped: 1000});
+
+var fun = function lang(l) {
+  dateformat.i18n = require('./lang/' + l)
+  return true;
+}
