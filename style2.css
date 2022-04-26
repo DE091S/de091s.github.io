@@ -1,5 +1,5 @@
 body{
-	background-color: #008B8B;
+	background-color: #2F4F4F;
 }
 
 /*#slides {
@@ -51,17 +51,13 @@ body{
 }*/
 
 
+#dn {
 
-.row {
-
-  margin-top:50px;
-  margin-left:10px;
+  
+  margin-left:600px;
 }
 
-.row2{
 
-  margin-top:100px;
-  margin-left:0px;
 
 }
 
@@ -73,16 +69,20 @@ body{
 	box-shadow: 0 8px 65px -5px #00FA9A;
 }
 
+#t1{
+	color: #9ACD32;
+}
+
 .Button{
 	letter-spacing: 2px;
-	font-size: 22px;
-	line-height: 68px;
+	font-size: 17px;
+	line-height: 58px;
 	text-transform: uppercase;
 	background: #66CDAA;
-	color: #ffffff;
+	color: #008080;
 	border: none;
 	border-radius: 10px;
-	min-width: 200px;
+	min-width: 20px;
 	padding: 0 24px;
 	box-shadow: 0 20px 60px -10px #008080;
 	cursor: pointer;
@@ -111,9 +111,10 @@ body{
 	border-radius: 10px;
 	min-width: 200px;
 	padding: 0 24px;
-	box-shadow: 0 20px 60px -10px #006c6c;
+	box-shadow: 0 20px 60px -10px #4169E1;
 	cursor: pointer;
 	transform: perspective(250px) scale3d(1,1,1);
 	transition: all 1s cubic-bezier(0.03, 0.98, 0.52, 0.99);
 	outline: none;
 }
+
