@@ -1,5 +1,10 @@
 body{
-	background-color: #000000;
+	background-image: url(img/mr3.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	
 }
 
 /*#slides {
