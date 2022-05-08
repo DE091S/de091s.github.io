@@ -1,0 +1,52 @@
+.Button-wrapper2{
+	position:relative;
+}
+
+.Button2:hover{
+	box-shadow: 0 8px 65px -5px #4B0082;
+}
+
+.Button2{
+	letter-spacing: 2px;
+	font-size: 15px;
+	line-height: 40px;
+	text-transform: uppercase;
+	background: #7B68EE;
+	color: #ffffff;
+	border: none;
+	border-radius: 10px;
+	min-width: 200px;
+	padding: 0 24px;
+	box-shadow: 0 20px 60px -10px #4169E1;
+	cursor: pointer;
+	transform: perspective(250px) scale3d(1,1,1);
+	transition: all 1s cubic-bezier(0.03, 0.98, 0.52, 0.99);
+	outline: none;
+}
+
+.Button-wrapper{
+	position:relative;
+}
+
+.Button:hover{
+	box-shadow: 0 8px 65px -5px #4B0082;
+}
+
+.Button{
+	letter-spacing: 2px;
+	font-size: 22px;
+	line-height: 68px;
+	text-transform: uppercase;
+	background: #7B68EE;
+	color: #ffffff;
+	border: none;
+	border-radius: 10px;
+	min-width: 200px;
+	padding: 0 24px;
+	box-shadow: 0 20px 60px -10px #4169E1;
+	cursor: pointer;
+	transform: perspective(250px) scale3d(1,1,1);
+	transition: all 1s cubic-bezier(0.03, 0.98, 0.52, 0.99);
+	outline: none;
+}
+
