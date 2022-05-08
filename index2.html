@@ -4,11 +4,22 @@
     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     	<title>Hack me</title>
     	<link rel="stylesheet" href="style2.css">
-    <h1><div class="Button-wrapper2"><a href="index3.html"><button class = "Button2">Darknet</button></a></h1>
+    	<h1><div class="Button-wrapper2"><a href="index3.html"><button class = "Button2">Darknet</button></a></h1>
+
     </head>
-    <body>
+    <body oncontextmenu="return false" >
+    	<style>
+    		body{
+    			background: #000;
+	   			color: #fff;
+
+    		}
+    	</style>
+
+    	
 		<input id='userInput' onKeyUp="userSubmit()" size=60><BR>
 		<P><div id='result'></div>
+
 			<script type='text/javascript'>
     			function userSubmit() 
     			{
@@ -22,7 +33,24 @@
 				}
  
     			}
-				('Button2').tilt({scale: 1.1, spped: 1000});
+    			('Button2').tilt({scale: 1.1, spped: 1000});
+			</script>
+
+	<script>
+		var colorArray = ["#fff", "#000"]; 
+		var i = 0; 
+
+		function changeColor(){
+    		document.body.style.background = colorArray[i]; 
+    		i++;
+    		if( i > colorArray.length - 1){
+        		i = 0;
+    }
+}
+
 </script>
+
+		<h3><div class="Button-wrapper2"><button class = "Button2" onclick="javascript:changeColor();">Сменить тему</button></a></h3>
+
     </body>
 </html>
