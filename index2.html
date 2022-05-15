@@ -6,6 +6,7 @@
     	<link rel="stylesheet" href="fb.css">
     	<h1><div class="Button-wrapper"><a href="index3.html"><button class = "Button">Darknet</button></a></h1>
     	<h3 id="bu"><div class="Button-wrapper2"><button class = "Button2" onclick="javascript:changeColor();">Сменить тему</button></a></h3>
+    	
 
     </head>
     <body oncontextmenu="return false" >
@@ -36,13 +37,19 @@
     			}
     			('Button2').tilt({scale: 1.1, spped: 1000});
 			</script>
-
+			
+			
+	<h1 class="text" id="xs">Тут я просто тестирую разные вещи</h1>
+			
+			
 	<script>
-		var colorArray = ["#fff", "#000"]; 
+		var colorArray = ["#fff", "#000"];
+		var colorArray2 = ["#000","#fff"];
 		var i = 0; 
 
 		function changeColor(){
-    		document.body.style.background = colorArray[i]; 
+    		document.body.style.background = colorArray[i];
+    		document.getElementById("xs").style.color = colorArray2[i];
     		i++;
     		if( i > colorArray.length - 1){
         		i = 0;
