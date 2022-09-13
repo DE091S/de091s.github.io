@@ -3,7 +3,7 @@
 }
 
 .Button:hover{
-	box-shadow: 0 8px 65px -5px #00FFFF;
+	box-shadow: 0 8px 65px -5px #FF0000;
 }
 
 .Button{
@@ -11,13 +11,13 @@
 	font-size: 22px;
 	line-height: 68px;
 	text-transform: uppercase;
-	background: #20B2AA;
+	background: #CD5C5C;
 	color: #ffffff;
 	border: none;
 	border-radius: 10px;
 	min-width: 200px;
 	padding: 0 24px;
-	box-shadow: 0 20px 60px -10px #4682B4;
+	box-shadow: 0 20px 60px -10px #F08080;
 	cursor: pointer;
 	transform: perspective(250px) scale3d(1,1,1);
 	transition: all 1s cubic-bezier(0.03, 0.98, 0.52, 0.99);
