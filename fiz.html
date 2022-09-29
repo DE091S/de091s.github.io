@@ -159,6 +159,7 @@ h1{
 
 
 
+
 	
 
 	<script type="text/javascript">
@@ -166,6 +167,30 @@ h1{
 			var s = 0;
 			var up = 1;
 			var colorArray = ["#FFA07A", "#E9967A", "#FA8072","#F08080","#CD5C5C","#DC143C", "#FF0000","#B22222","#8B0000"];
+			var lvl = 'Ученик'
+
+			
+
+			function levl(){
+
+			if(s<9){
+
+				lvl = 'Ученик';
+			}
+			else if(s>=9 && s<=50){
+				lvl = "Лаборант";
+			}
+			else if(s>=51 && s<=500){
+				lvl = "Физичка";
+			}
+			else{
+				lvl = "Что ты такое?"
+			}
+				document.getElementById("levle").style.color = "#FFFFFF";
+				document.getElementsByTagName("span")[0].firstChild.data = "Ваш уровень: "+lvl;
+
+		}
+
 
 
 
@@ -188,6 +213,7 @@ h1{
 			}
 
 			function plus2() {
+				levl();
 				teg();
 				cc();
 				s = s + up;
@@ -197,11 +223,13 @@ h1{
 			function cc(){
     		document.getElementById("txt").style.color = colorArray[i];
     		document.getElementById("txt2").style.color = colorArray[i];
+
     		i++;
     		if( i > colorArray.length - 1){
         		i = 0;
 			}
 		}
+
 
 
 
@@ -213,14 +241,12 @@ h1{
 
 	<section class="container">
   <h1>
-    <span class="title">Это типо</span>
-    <span class="title">красивый</span>
-    <span class="title">стиль</span>
-    <span class="title">епта</span>
+    <span class="title" id="levle">Ваш уровень: никто(чмо(соцэк))</span>
   </h1>
-  
-  <div class="button">restart</div>
+
 </section>
+
+
 
 </body>
 </html>
