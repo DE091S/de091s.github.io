@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Симулятор физички</title>
+  <link rel="canonical" href="./regular-html-version.html" />
+  <meta name="viewport" content="...">
+  <link rel="icon" href="fiz3.jpg" type="image/x-icon">
+	<style type="text/css">
+body{
+	background-image: url(fiz3.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	
+}
+#txt{
+	color: white;
+}
+
+		.Button-wrapper{
+	position:relative;
+}
+
+.Button:hover{
+	box-shadow: 0 8px 65px -5px #FF0000;
+}
+
+.Button{
+	letter-spacing: 2px;
+	font-size: 22px;
+	line-height: 68px;
+	text-transform: uppercase;
+	background: #CD5C5C;
+	color: #ffffff;
+	border: none;
+	border-radius: 10px;
+	min-width: 200px;
+	padding: 0 24px;
+	box-shadow: 0 20px 60px -10px #F08080;
+	cursor: pointer;
+	transform: perspective(250px) scale3d(1,1,1);
+	transition: all 1s cubic-bezier(0.03, 0.98, 0.52, 0.99);
+	outline: none;
+
+}
+
+#content .obvod h1{
+font-size:30px;
+color:#E2A126!important;
+text-shadow: 1px 0 1px #000, 
+0 1px 1px #000, 
+-1px 0 1px #000, 
+0 -1px 1px #000;
+}
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+
+$background: linear-gradient(to bottom, #405166 0%,#656f6f 100%);
+$red: #e55643 ;
+$green: #2b9f5e;
+$yellow: #f1c83c;
+$shadow: #533d4a;
+
+html{
+  height: 100%;
+}
+
+body{
+  font-family: 'Fjalla One', sans-serif;
+  background: $background;
+}
+
+.container{
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  display: block;
+  position: absolute;
+  max-width: 225px;
+}
+
+.button{
+  float: left;
+  position: relative;
+  bottom: -65px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-10deg);
+  color: $red;
+  text-transform: uppercase;
+  opacity: 0;
+  visibility: hidden;
+  cursor: pointer;
+  
+  span{
+    transform: skew(-10deg);
+    display: block;
+    float: left;
+    text-shadow: $shadow 1px 1px, $shadow 2px 2px, $shadow 3px 3px, $shadow 4px 4px;
+  }
+}
+
+h1{
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 42px;
+  margin: 0;
+  line-height: 47px;
+  letter-spacing: 2px;
+}
+
+.title{
+  transform: translateX(-50%) rotate(-10deg);
+  display: block;
+  float: left;
+  left: 50%;
+  position: relative;
+  
+  span {
+    transform: skew(-10deg);
+    display: block;
+    float: left;
+    text-shadow: $shadow 1px 1px, $shadow 2px 2px, $shadow 3px 3px, $shadow 4px 4px, $shadow 5px 5px, $shadow 6px 6px;
+    min-width: 10px;
+    min-height: 10px;
+    position: relative;
+  }
+}
+
+.title{
+  &:nth-child(1){
+    color: $red;
+  }
+  &:nth-child(2){
+    color: $green;
+  }
+  &:nth-child(3){
+    color: $yellow;
+  }
+}
+
+
+
+
+	</style>
+
+
+</head>
+<body>
+	
+
+	<center> <button onclick="plus2()" class = "Button"> Поставить 2</button> </center>
+
+	<center> <h2 id="txt"> </h2></center>
+	<center> <h1 id="txt2"> </h1></center>
+
+
+
+
+	
+
+	<script type="text/javascript">
+		
+			var s = 0;
+			var up = 1;
+			var colorArray = ["#FFA07A", "#E9967A", "#FA8072","#F08080","#CD5C5C","#DC143C", "#FF0000","#B22222","#8B0000"];
+
+
+
+
+
+			var i = 0; 
+
+			teg();
+			function teg() {
+				if(s<9){
+
+
+			  document.getElementsByTagName("h2")[0].firstChild.data = "Двоек поставлено:" +s;
+			}
+			  else{
+			  	document.getElementsByTagName("h2")[0].firstChild.data = '';
+			  	document.getElementsByTagName("h1")[0].firstChild.data = "Двоек поставлено:" +s + " ккккомбо";
+			  }
+
+			}
+
+			function plus2() {
+				teg();
+				cc();
+				s = s + up;
+
+					}
+
+			function cc(){
+    		document.getElementById("txt").style.color = colorArray[i];
+    		document.getElementById("txt2").style.color = colorArray[i];
+    		i++;
+    		if( i > colorArray.length - 1){
+        		i = 0;
+			}
+		}
+
+
+
+
+
+    
+
+	</script>
+
+	<section class="container">
+  <h1>
+    <span class="title">Это типо</span>
+    <span class="title">красивый</span>
+    <span class="title">стиль</span>
+    <span class="title">епта</span>
+  </h1>
+  
+  <div class="button">restart</div>
+</section>
+
+</body>
+</html>
