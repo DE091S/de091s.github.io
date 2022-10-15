@@ -197,6 +197,9 @@ spinner.addEventListener("transitionend", () => {
   document.getElementById('stav').disabled = false;
   document.getElementById('stav2').disabled = false;
   document.getElementById('stav3').disabled = false;
+  document.getElementsByTagName("h2")[1].firstChild.data = 0;
+  document.getElementsByTagName("h2")[2].firstChild.data = 0;
+  document.getElementsByTagName("h2")[3].firstChild.data = 0;
 });
 
 
@@ -208,6 +211,7 @@ function stavka(){
   vvod = 1;
 
   stv = stv+100;
+  document.getElementsByTagName("h2")[1].firstChild.data = stv;
   console.log(stv);
 
 }
@@ -216,8 +220,8 @@ function stavka2(){
   bal = bal - 100;
   console.log(bal);
   vvod2 = 2;
-
   stv2 = stv2+100;
+  document.getElementsByTagName("h2")[2].firstChild.data = stv2;
 
 }
 function stavka3(){
@@ -225,7 +229,7 @@ function stavka3(){
   bal = bal - 100;
   console.log(bal);
   vvod3 = 3;
-
   stv3 = stv3+100;
+  document.getElementsByTagName("h2")[3].firstChild.data = stv3;
 
 }
