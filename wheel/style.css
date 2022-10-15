@@ -16,6 +16,12 @@ body {
   color: white;
 }
 
+  
+    body{
+text-shadow: #000 1px 0 0px, #000 0 1px 0px, #000 -1px 0 0px, #000 0 -1px 0px;
+}
+
+
 h1{
   color: #fff;
   text-transform: uppercase;
@@ -25,14 +31,7 @@ h1{
   letter-spacing: 2px;
 }
 
-#content .obvod h1{
-font-size:30px;
-color:#E2A126!important;
-text-shadow: 1px 0 1px #000, 
-0 1px 1px #000, 
--1px 0 1px #000, 
-0 -1px 1px #000;
-}
+
 
 
 .deal-wheel {
