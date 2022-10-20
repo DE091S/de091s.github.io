@@ -161,9 +161,9 @@ trigger.addEventListener("click", () => {
   document.getElementById('stav').disabled = true;
   document.getElementById('stav2').disabled = true;
   document.getElementById('stav3').disabled = true;
-  // задаём начальное вращение колеса
+ 
   rotation = Math.floor(Math.random() * 360 + spinertia(2000, 5000));
-  // убираем прошлый приз
+ 
   prizeNodes.forEach((prize) => prize.classList.remove(selectedClass));
 
   wheel.classList.add(spinClass);
