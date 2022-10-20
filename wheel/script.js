@@ -211,55 +211,50 @@ spinner.addEventListener("transitionend", () => {
 setupWheel();
 
 function stavka(){
-      if (bal<100) {
-  document.getElementById('stav').disabled = true;
-  document.getElementById('stav2').disabled = true;
-  document.getElementById('stav3').disabled = true;
+  if (bal<100) {
+    document.getElementById('stav').disabled = true;
+    document.getElementById('stav2').disabled = true;
+    document.getElementById('stav3').disabled = true;
   }
   else{
-
-  bal = bal - 100;
-  console.log(bal);
-  vvod = 1;
-
-  stv = stv+100;
-  document.getElementsByTagName("h1")[0].firstChild.data = "Баланс: "+bal;
-  document.getElementsByTagName("h2")[1].firstChild.data = stv;
-  console.log(stv);
-}
-
-
+    bal = bal - 100;
+    console.log(bal);
+    vvod = 1;
+    stv = stv+100;
+    document.getElementsByTagName("h1")[0].firstChild.data = "Баланс: "+bal;
+    document.getElementsByTagName("h2")[1].firstChild.data = stv;
+    console.log(stv);
+  }
 }
 function stavka2(){
-      if (bal<100) {
-  document.getElementById('stav').disabled = true;
-  document.getElementById('stav2').disabled = true;
-  document.getElementById('stav3').disabled = true;
-  }
-  console.log('hi');
-  bal = bal - 100;
-  console.log(bal);
-  vvod2 = 2;
-  stv2 = stv2+100;
-  document.getElementsByTagName("h1")[0].firstChild.data = "Баланс: "+bal;
-  document.getElementsByTagName("h2")[2].firstChild.data = stv2;
-
-
-}
-function stavka3(){
-      if (bal<100) {
-  document.getElementById('stav').disabled = true;
-  document.getElementById('stav2').disabled = true;
-  document.getElementById('stav3').disabled = true;
+  if (bal<100) {
+    document.getElementById('stav').disabled = true;
+    document.getElementById('stav2').disabled = true;
+    document.getElementById('stav3').disabled = true;
   }
   else{
-  console.log('hi');
-  bal = bal - 100;
-  console.log(bal);
-  vvod3 = 3;
-  stv3 = stv3+100;
-  document.getElementsByTagName("h1")[0].firstChild.data = "Баланс: "+bal;
-  document.getElementsByTagName("h2")[3].firstChild.data = stv3;
+    console.log('hi');
+    bal = bal - 100;
+    console.log(bal);
+    vvod2 = 2;
+    stv2 = stv2+100;
+    document.getElementsByTagName("h1")[0].firstChild.data = "Баланс: "+bal;
+    document.getElementsByTagName("h2")[2].firstChild.data = stv2;
+  }
 }
-
+function stavka3(){
+  if (bal<100) {
+    document.getElementById('stav').disabled = true;
+    document.getElementById('stav2').disabled = true;
+    document.getElementById('stav3').disabled = true;
+  }
+  else{
+    console.log('hi');
+    bal = bal - 100;
+    console.log(bal);
+    vvod3 = 3;
+    stv3 = stv3+100;
+    document.getElementsByTagName("h1")[0].firstChild.data = "Баланс: "+bal;
+    document.getElementsByTagName("h2")[3].firstChild.data = stv3;
+  }
 }
