@@ -26,6 +26,18 @@ body{
 	box-shadow: 0 8px 65px -5px #FF0000;
 }
 
+@keyframes shake{
+	25% { transform: translateX(4px)}
+	35% { transform: translateY(4px)}
+	50% { transform: translateX(-4px)}
+	65% { transform: translateY(-4px)}
+	75% { transform: translateX(4px)}
+	85% { transform: translateY(4px)}
+}
+button:active{
+	animation: shake .3s;
+}
+
 .Button{
 	letter-spacing: 2px;
 	font-size: 22px;
